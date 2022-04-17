@@ -10,46 +10,52 @@
 <body>
     <div class="container">
         <h4 class="text-center">Banker's Algorithm ( Deadlock Avoidance ) </h4>
-        <div class="col-8 m-auto mt-5 resources">
-            <div id="resources">
-                <div class="bg-danger p-1  px-5 my-1"> 🚀 Available Max Resources Instance:
-                <p id="available_max">
-                </p>
-                </div>
-                <div class="bg-info p-1  px-5 my-1"> ↗ Available Resources Instance:
-                <p id="available">
-                    
-                </p>
-            </div>
-                <div class="bg-secondary text-white p-1 px-5 my-1"> 🧐 Allocated Resources Instance:
+        <div class="row">
 
-                    <p id="being_used">
+            <div class="col-md-8 m-auto mt-5 resources">
+                <div id="resources">
+                    <div class="bg-danger p-1  px-5 my-1"> 🚀 Available Max Resources Instance:
+                    <p id="available_max">
+                    </p>
+                    </div>
+                    <div class="bg-info p-1  px-5 my-1"> ↗ Available Resources Instance:
+                    <p id="available">
                         
                     </p>
                 </div>
-
-                <p id="safe" class="bg-sucess p-2">
-                    Safe State:
-                </p>
+                    <div class="bg-secondary text-white p-1 px-5 my-1"> 🧐 Allocated Resources Instance:
+    
+                        <p id="being_used">
+                            
+                        </p>
+                    </div>
+    
+                    <p id="safe" class="bg-sucess p-2">
+                        Safe State:
+                    </p>
+                </div>
+    
+                <table class="table table-responsive">
+                    <tbody id="table_body">
+                       
+                    </tbody>
+                    <footer>
+                       
+                    </footer>
+                </table>
+                <button onclick="Schedule()" id="sbtn" class="btn btn-brand bg-dark btn-dark">START SCHEDULING</button>
             </div>
-
-            <table class="table table-responsive">
-                <tbody id="table_body">
-                   
-                </tbody>
-                <footer>
-                   
+            <div class="processes col-md-3" id="processes">
+               
+                <footer class="mt-5">
+                
+                    <img src="https://i0.wp.com/codewithsudeep.com/wp-content/uploads/2021/12/Black_and_White_Logo__1_-removebg-preview.png?fit=400%2C500&ssl=1" />
+                    <p class="text-center">Developed by: CodeWithSudeep</p>
+                    <br/>
                 </footer>
-            </table>
-            <button onclick="Schedule()" id="sbtn" class="btn btn-brand bg-dark btn-dark">START SCHEDULING</button>
+            </div>
         </div>
-        <div class="processes" id="processes">
-           
         </div>
-    </div>
-    <footer class="mt-5">
-        <p class="text-center">Developed by: CodeWithSudeep</p>
-    </footer>
     <script async src="script.js" defer></script>
 </body>
 </html>

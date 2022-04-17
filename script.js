@@ -202,7 +202,11 @@ function Schedule(){
     document.getElementById('sbtn').innerText = "Processing...";
 
     for (const element of process_list){
-        if(!element.executed && element.remaining.A + totalAllocate.A <= TotalResource.A && element.remaining.B + totalAllocate.B <= TotalResource.B && element.remaining.C + totalAllocate.C <= TotalResource.C){
+        if(!element.executed && 
+            element.remaining.A + totalAllocate.A <= TotalResource.A && 
+            element.remaining.B + totalAllocate.B <= TotalResource.B && 
+            element.remaining.C + totalAllocate.C <= TotalResource.C
+            ){
             element.executed = true;
             safe_sequnece.push(element.name);
             totalAllocate.A -= element.allocate.A;
