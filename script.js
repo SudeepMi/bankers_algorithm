@@ -212,7 +212,7 @@ function Schedule(){
             totalAllocate.A -= element.allocate.A;
             totalAllocate.B -= element.allocate.B;
             totalAllocate.C -= element.allocate.C;
-            document.getElementById(element.name).setAttribute('class', 'bg-success');
+            document.getElementById(element.name).setAttribute('class', 'bg-success text-white');
             showAllocation();
             break;
         }
